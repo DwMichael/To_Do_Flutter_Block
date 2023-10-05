@@ -83,3 +83,11 @@ lib/firebase_options.dart
 macos/Runner/GoogleService-Info.plist
 macos/Runner/Info.plist
 windows/runner/runner.exe.manifest
+
+
+windows/flutter/ephemeral/plugin_symlinks
+.cmake
+.h
+.cc
+.swift
+.sh
