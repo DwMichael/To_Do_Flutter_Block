@@ -4,7 +4,7 @@ import 'package:bloc/bloc.dart';
 
 class ConnectivityCubit extends Cubit<bool> {
   ConnectivityCubit() : super(true) {
-    _timer = Timer.periodic(Duration(seconds: 10), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 2), (timer) {
       _checkInternetConnection();
     });
   }
@@ -13,7 +13,7 @@ class ConnectivityCubit extends Cubit<bool> {
 
   Future<void> _checkInternetConnection() async {
     try {
-      final response = await InternetAddress.lookup('www.kindacode.com');
+      final response = await InternetAddress.lookup('www.google.com');
       if (response.isNotEmpty) {
         emit(true);
       }
