@@ -35,9 +35,24 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {
-        bloc.add(CounterIncrementPressed());
-      }),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+              child: const Icon(Icons.add),
+              onPressed: () {
+                bloc.add(CounterIncrementPressed());
+              }),
+          const SizedBox(
+            height: 20,
+          ),
+          FloatingActionButton(
+              child: const Icon(Icons.plus_one_rounded),
+              onPressed: () {
+                bloc.add(CounterNotesIcrementPressed());
+              }),
+        ],
+      ),
     );
   }
 }
