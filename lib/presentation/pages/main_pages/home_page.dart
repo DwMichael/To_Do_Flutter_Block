@@ -39,18 +39,20 @@ class MyHomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-              child: const Icon(Icons.add),
-              onPressed: () {
-                bloc.add(CounterIncrementPressed());
-              }),
+            child: const Icon(Icons.add),
+            onPressed: () {
+              bloc.add(CounterIncrementPressed());
+            },
+          ),
           const SizedBox(
             height: 20,
           ),
           FloatingActionButton(
-              child: const Icon(Icons.plus_one_rounded),
-              onPressed: () {
-                bloc.add(CounterNotesIcrementPressed());
-              }),
+            child: const Icon(Icons.plus_one_rounded),
+            onPressed: () {
+              bloc.add(CounterNotesIcrementPressed());
+            },
+          ),
         ],
       ),
     );
