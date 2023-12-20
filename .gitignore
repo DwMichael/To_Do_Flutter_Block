@@ -91,3 +91,4 @@ windows/flutter/ephemeral/plugin_symlinks
 .cc
 .swift
 .sh
+ios/Flutter/flutter_export_environment.sh
