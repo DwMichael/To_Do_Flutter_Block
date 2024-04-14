@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:to_do_app/business_logic/bloc/counterbloc.dart';
+import 'package:to_do_app/bloc/counterbloc.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key, required this.title});
@@ -20,7 +20,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'Dodawaj Matsony',
             ),
             StreamBuilder<int>(
               initialData: 0,

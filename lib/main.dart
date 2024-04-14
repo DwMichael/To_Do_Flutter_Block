@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:to_do_app/business_logic/bloc/conectivity_cubit.dart';
+import 'package:to_do_app/bloc/conectivity_cubit.dart';
 import 'package:to_do_app/presentation/pages/main_pages/home_page.dart';
 import 'firebase_options.dart';
 
@@ -21,12 +21,15 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => ConnectivityCubit(),
       child: MaterialApp(
+        showSemanticsDebugger: true,
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        home: const MyHomePage(title: 'Mazo app'),
+        debugShowCheckedModeBanner: false,
+        debugShowMaterialGrid: false,
       ),
     );
   }
