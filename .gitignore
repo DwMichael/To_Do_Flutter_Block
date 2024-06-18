@@ -93,3 +93,8 @@ windows/flutter/ephemeral/plugin_symlinks
 .sh
 ios/Flutter/flutter_export_environment.sh
 windows/flutter/ephemeral/.plugin_symlinks/firebase_core
+
+firepit-log.txt
+cloud_firestore
+firebase_auth
+firebase_core
